@@ -3,7 +3,7 @@ session_start();
 
 //Pārbauda, vai lietotājs jau nav ielogojies
 if(isset($_SESSION["is-logged-in"])){
-    header("Location: index.php");
+    //header("Location: index.php");
 }
 
 $pdo = require 'database.php';
