@@ -123,6 +123,7 @@ body{
 
 .side-container{
     flex: 1;
+    height: 100%;
 }
 
 .chat-widget{
@@ -246,4 +247,87 @@ body{
     font-size: 18px;
     border: none;
     background-color: var(--accent-color);
+}
+
+.new-thread{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.thread-button{
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.side-widget{
+    margin-top: 40px;
+    margin-right: 40px;
+    background-color: var(--widget-color);
+    border-radius: 7px;
+}
+
+.mini-post{
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.mini-post a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.advertisment{
+    width: 70%;
+    margin-top: 40px;
+    margin-right: 40px;
+    height: 200px;
+    text-align: center;
+}
+
+.advertisment h2{
+    color: var(--text-color);
+    margin-top: 90px;
+}
+
+.forum-post{
+    width: 100%;
+    border-bottom: 3px solid var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.post-info{
+    margin-top: 10px;
+}
+
+.post-info a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.post-info p{
+    color: rgb(177, 177, 177);
+}
+
+#user-link{
+    font-size: 16px;
+    text-decoration: underline;
+    color: lightgreen;
 }
