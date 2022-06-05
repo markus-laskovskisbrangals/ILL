@@ -10,10 +10,11 @@
 <body>
     <div class="form-container">
         <h2>Ienākt</h2>
+        <?php include 'checklogin.php'; ?>
         <form action="" method="POST">
-            <input type="text" name="username" id="" placeholder="Lietotājvārds">
-            <input type="password" name="password" id="" placeholder="Parole">
-            <input type="submit" value="Ienākt" id="submit-button">
+            <input type="text" name="username" placeholder="Lietotājvārds">
+            <input type="password" name="password" placeholder="Parole">
+            <input type="submit" name="login" value="Ienākt" id="submit-button">
         </form>
         <p>Vēl neesi reģistrējies? <a href="register.php">Reģistrēties</a></p>
     </div>
