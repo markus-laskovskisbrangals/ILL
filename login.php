@@ -14,7 +14,7 @@
         <form action="" method="POST">
             <input type="text" name="username" placeholder="Lietotājvārds">
             <input type="password" name="password" placeholder="Parole">
-            <input type="submit" value="Ienākt" id="submit-button">
+            <input type="submit" name="login" value="Ienākt" id="submit-button">
         </form>
         <p>Vēl neesi reģistrējies? <a href="register.php">Reģistrēties</a></p>
     </div>
