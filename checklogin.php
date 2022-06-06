@@ -17,7 +17,7 @@ if(isset($_POST["login"])){
     $statement = $pdo->prepare($sql);
     $statement->execute(array(
         ':username' => $username,
-        ':password' => $password
+        ':password' => md5($password)
     ));
     $users = $statement->fetchAll(PDO::FETCH_ASSOC);
 

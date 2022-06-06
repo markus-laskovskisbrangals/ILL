@@ -2,7 +2,7 @@
         <ul class="menu-itams">
             <li><a href="#">Sākums</a></li>
             <li><a href="#">Forums</a></li>
-            <li><a href="#">Vēl kaut kas</a></li>
+            <li><a href="#">Par forumu</a></li>
             <!--<li><input type="text" placeholder="Meklēt..."><button><i class="fa-solid fa-magnifying-glass"></i></button></li>-->
         </ul>
         <ul class="user-options">

@@ -22,24 +22,13 @@
                         <p>Čats</p>
                     </div>
                     <div class="widget-body">
-                        <div class="chat-entry">
-                            <img src="./assets/images/bomzis.png" alt="chat profile picture">
-                            <p class="chat-name">xXdussydestroyerXx</p>
-                            <p class="chat-message">Čau!</p>
-                        </div>
-                        <div class="chat-entry">
-                            <img src="./assets/images/bomzis.png" alt="chat profile picture">
-                            <p class="chat-name">xXdussydestroyerXx</p>
-                            <p class="chat-message">Kā iet?</p>
-                        </div>
-                        <div class="chat-entry">
-                            <img src="./assets/images/bomzis.png" alt="chat profile picture">
-                            <p class="chat-name">xXdussydestroyerXx</p>
-                            <p class="chat-message">Te kāds ir?</p>
-                        </div>
                         <div class="message-input">
-                            <input type="text" name="chat-message" id="chat-message">
-                            <button>Sūtīt</button>
+                            <form method="post" action="Page2.php">
+                                <input type="textarea" name = "input"/>
+                                <input type="submit" value="Send"/>
+                            </form>
+                            <iframe src="Page1.php" width="450" height="250" scrolling="yes">
+                            </iframe>
                         </div>
                     </div>
                 </div>
@@ -51,7 +40,7 @@
                         <div class="forum-post">
                             <div class="image"></div>
                             <div class="post-info">
-                                <a href="">Labdien visiem!</a>
+                                <a href="post.php">Labdien visiem!</a>
                                 <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
                             </div>
                         </div>
