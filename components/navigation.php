@@ -13,7 +13,7 @@
         <?php else: ?>
         <ul class="user-option">
             <li><p>Labdien, <?php echo $_SESSION['username']; ?>!</p></li>
-            <li><a href="profile.php?profileid=<?php $_SESSION['user-id'] ?>">Profils</a></li>
+            <li><a href="profile.php?profileid=<?php echo $_SESSION['user-id']; ?>">Profils</a></li>
             <li><a href="logout.php" class="accent-link">Iziet</a></li>
         </ul>
         <?php endif; ?>
