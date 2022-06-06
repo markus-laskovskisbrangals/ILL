@@ -51,7 +51,7 @@
                         <div class="forum-post">
                             <div class="image"></div>
                             <div class="post-info">
-                                <a href="">Labdien visiem!</a>
+                                <a href="post.php">Labdien visiem!</a>
                                 <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
                             </div>
                         </div>
