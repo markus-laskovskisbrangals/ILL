@@ -14,7 +14,22 @@
     <?php require './components/navigation.php'; ?>
     <div class="container">
         <div class="namedays">
-            <p>Vārda dienas šodien: Markus</p>
+            <?php 
+            
+            $file = './assets/data/namedays.json';
+            $data = file_get_contents($file);
+            $namedays = json_decode($data, true);
+            $names = '';
+            $month = getdate()['mon'] - 1;
+            $day = getdate()['mday'] - 1;
+
+            for($i = 0; $i < sizeof($namedays[$month][$day]); $i++){
+                $names .= $namedays[$month][$day][$i].' ';
+            }
+
+            echo '<p>Vārda dienas šodien: '.$names;
+
+            ?>
         </div>
         <div class="main-content">
             <div class="content-container">
