@@ -1,24 +1,22 @@
 <?php
 session_start();
 
-//Pārbauda, vai lietotājs jau nav ielogojies
-if(isset($_SESSION["is-logged-in"])){
-    //header("Location: index.php");
-}
-
 $pdo = require 'database.php';
 
-if(isset($_POST["login"])){
-    $id = $_SESSION['user-id'];
-    $sql = 'SELECT * FROM user WHERE id = :id;';
+$id = $_SESSION['user-id'];
+$sql = 'SELECT * FROM user WHERE id = :id;';
 
-    //Iegūst lietotājvārd un paroli no datubāzes
-    $statement = $pdo->prepare($sql);
-    $statement->execute(array(
-        ':id' => $id,
-    ));
-    $users = $statement->fetchAll(PDO::FETCH_ASSOC);
-}
+$statement = $pdo->prepare($sql);
+$statement->execute(array(
+    ':id' => $id,
+));
+$users = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+$username = $users[0]['username'];
+$firstname = $users[0]['firstname'];
+$lastname = $users[0]['lastname'];
+$email = $users[0]['email'];
+
 ?>
 
 <!DOCTYPE html>
@@ -33,12 +31,13 @@ if(isset($_POST["login"])){
 <body>
     <div class="banner"></div>
     <?php require './components/navigation.php'; ?>
-
-    <ul class="user-option">
-            <?php echo $_SESSION['firstname']; ?>
-            <?php echo $_SESSION['lastname']; ?>
-            <?php echo $_SESSION['username']; ?>
-
-        </ul>
+    <div class="container">
+            <div class="chat-widget" style="display: inline-block; margin: 35px;">
+                <div class="widget-header">
+                    <p><?php echo $username; ?> profils</p>
+                </div>
+                <div class="widget-body"></div>
+            </div>
+        </div>
 </body>
 </html>
