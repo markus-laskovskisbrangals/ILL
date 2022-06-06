@@ -38,18 +38,11 @@
                         <p>Foruma ieraksti</p>
                     </div>
                     <div class="widget-body">
-                        <div class="forum-post">
-                            <div class="image"></div>
-                            <div class="post-info">
-                                <a href="post.php">Labdien visiem!</a>
-                                <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
-                            </div>
-                        </div>
                         <?php
                         
                         $pdo = require 'database.php';
                         try{
-                            $sql = "SELECT post_id, post_title, author_id FROM posts";
+                            $sql = "SELECT post_id, post_title, author_id, user.id, user.username FROM posts INNER JOIN user ON posts.author_id = user.id";
                             $statement = $pdo->prepare($sql);
                             $statement->execute();
                         }catch(PDOException $e) {
@@ -67,7 +60,7 @@
                             <div class="image"></div>
                                 <div class="post-info">
                                     <a href="post.php?postid='.$posts[sizeof($posts) - $i - 1]['post_id'].'">'.$posts[sizeof($posts) - $i - 1]['post_title'].'</a>
-                                    <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
+                                    <p>Pievienoja <a href="profile.php?profileid='.$posts[sizeof($posts) - $i - 1]['author_id'].'" id="user-link">'.$posts[sizeof($posts) - $i - 1]['username'].'</a></p>
                                 </div>
                             </div>
 
