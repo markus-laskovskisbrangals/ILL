@@ -1,29 +1,25 @@
 <?php
 
-$host = 'localhost';
-$db = 'ttkd';
-$user = 'root';
-$pass = '';
-$input = $_POST['input'];
+$pdo = require 'database.php';
 
-$connection = 'mysql:host='.$host.';dbname='.$db.';charset=UTF8;';
+if(isset($_POST['send-message'])){
+    $input = $_POST['chat-input'];
 
-try{
-    //Jauna PDO objekta izveida
-    $pdo = new PDO($connection, $user, $pass);
-    return $pdo;
-
-} catch(PDOException $e){
-    echo 'Pieslēgums datubāzei neizdevās: '.$e;
+    try{
+        $sql = "INSERT INTO chat (message) VALUES (:input)";
+        $statement = $pdo->prepare($sql);
+        $statement->execute(array(
+            ':input' => $input
+        ));
+        header('Location: index.php');
+    }catch(PDOException $e) {
+        echo $e->getMessage();
+        echo '<div class="alert alert-danger" role="alert">
+        Datubāzes kļūda!
+        </div>';
+    }
+    
 }
 
-$sql = "INSERT INTO chat (message) VALUES ($input)";
 
-if ($connection->query($sql) === TRUE) {
-    header("location: index.php");
-} else {
-    echo "Error: " . $sql . "<br>" . $connection->error;
-}
-
-$connection->close();
 ?>

@@ -23,13 +23,12 @@
                         <p>Čats</p>
                     </div>
                     <div class="widget-body">
+                        <iframe src="Page1.php" width="100%" height="350" scrolling="yes" frameBorder="0"></iframe>
                         <div class="message-input">
-                            <form method="post" action="Page2.php">
-                                <input type="textarea" name = "input"/>
-                                <input type="submit" value="Send"/>
+                            <form method="POST" action="Page2.php">
+                                <input type="textarea" name = "chat-input" autocomplete="off"/>
+                                <button type="submit" name="send-message"/>Send</button>
                             </form>
-                            <iframe src="Page1.php" width="450" height="250" scrolling="yes">
-                            </iframe>
                         </div>
                     </div>
                 </div>
