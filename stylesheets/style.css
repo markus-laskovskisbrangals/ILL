@@ -95,7 +95,7 @@ body{
 .container{
     width: 70%;
     margin: 160px auto;
-    min-height: 40vh;
+    
     background-color: var(--secondary-color);
 }
 
@@ -330,4 +330,34 @@ body{
     font-size: 16px;
     text-decoration: underline;
     color: lightgreen;
+}
+
+.newpost form{
+    display: flex;
+    flex-direction: column;
+}
+
+.newpost form label{
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 19px;
+    color: var(--text-color);
+}
+
+.newpost input, .newpost textarea{
+    padding: 8px;
+    border-radius: 7px;
+    margin: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 1px solid var(--accent-color);
+    font-size: 18px;
+}
+
+.newpost button{
+    padding: 8px;
+    color: var(--text-color);
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 7px;
 }
