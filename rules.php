@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./stylesheets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Par Outpost From</title>
+    <title>Foruma noteikumi</title>
 </head>
 <?php session_start(); ?>
 <body>
