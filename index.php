@@ -23,13 +23,18 @@
                         <p>Čats</p>
                     </div>
                     <div class="widget-body">
+                        <iframe src="Page1.php" width="100%" height="350" scrolling="yes" frameBorder="0"></iframe>
                         <div class="message-input">
-                            <form method="post" action="Page2.php">
-                                <input type="textarea" name = "input"/>
-                                <input type="submit" value="Send"/>
+                            <?php if(isset($_SESSION['is-logged-in'])): ?>
+                            <form method="POST" action="Page2.php">
+                                <input type="textarea" name = "chat-input" autocomplete="off"/>
+                                <button type="submit" name="send-message"/>Send</button>
                             </form>
-                            <iframe src="Page1.php" width="450" height="250" scrolling="yes">
-                            </iframe>
+                            <?php else: ?>
+                                <div class="login-alert">
+                                    <p><a href="login.php">Ielogojies</a> lai sūtītu ziņas čatā!</p>
+                                </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -38,27 +43,45 @@
                         <p>Foruma ieraksti</p>
                     </div>
                     <div class="widget-body">
-                        <div class="forum-post">
+                        <?php
+                        
+                        $pdo = require 'database.php';
+                        try{
+                            $sql = "SELECT post_id, post_title, author_id, user.id, user.username FROM posts INNER JOIN user ON posts.author_id = user.id";
+                            $statement = $pdo->prepare($sql);
+                            $statement->execute();
+                        }catch(PDOException $e) {
+                            echo $e->getMessage();
+                            echo '<div class="alert alert-danger" role="alert">
+                            Datubāzes kļūda!
+                            </div>';
+                        }
+                        $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                        for($i = 0; $i < sizeof($posts); $i++){
+                            echo '
+                            
+                            <div class="forum-post">
                             <div class="image"></div>
-                            <div class="post-info">
-                                <a href="post.php">Labdien visiem!</a>
-                                <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
+                                <div class="post-info">
+                                    <a href="post.php?postid='.$posts[sizeof($posts) - $i - 1]['post_id'].'">'.$posts[sizeof($posts) - $i - 1]['post_title'].'</a>
+                                    <p>Pievienoja <a href="profile.php?profileid='.$posts[sizeof($posts) - $i - 1]['author_id'].'" id="user-link">'.$posts[sizeof($posts) - $i - 1]['username'].'</a></p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="forum-post">
-                            <div class="image"></div>
-                            <div class="post-info">
-                                <a href="">Kur nopirkt PSP bateriju?</a>
-                                <p>Pievienoja <a href="" id="user-link">somerandomgamer</a></p>
-                            </div>
-                        </div>
+
+                            ';
+                        }
+                        
+                        ?>
                     </div>
                 </div>
             </div>
             <div class="side-container">
+                <?php if (isset($_SESSION['is-logged-in'])): ?>
                 <div class="new-thread">
                     <a href="newpost.php" class="thread-button">+ Pievienot jaunu ierakstu</a>
                 </div>
+                <?php endif; ?>
                 <div class="side-widget">
                     <div class="widget-header">
                         <p>Jaunkākie ieraksti</p>
