@@ -420,3 +420,18 @@ body{
 .comment-content p{
     color: var(--text-color);
 }
+
+.login-alert{
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 40%;
+}
+
+.login-alert a{
+    color: var(--accent-color);
+}
+
+.login-alert p{
+    color: var(--text-color);
+}
