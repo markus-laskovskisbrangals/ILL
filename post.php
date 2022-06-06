@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $pdo = require 'database.php';
 
 $postid = $_GET['postid'];

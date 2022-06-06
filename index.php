@@ -45,13 +45,36 @@
                                 <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
                             </div>
                         </div>
-                        <div class="forum-post">
+                        <?php
+                        
+                        $pdo = require 'database.php';
+                        try{
+                            $sql = "SELECT post_id, post_title, author_id FROM posts";
+                            $statement = $pdo->prepare($sql);
+                            $statement->execute();
+                        }catch(PDOException $e) {
+                            echo $e->getMessage();
+                            echo '<div class="alert alert-danger" role="alert">
+                            Datubāzes kļūda!
+                            </div>';
+                        }
+                        $posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+                        for($i = 0; $i < sizeof($posts); $i++){
+                            echo '
+                            
+                            <div class="forum-post">
                             <div class="image"></div>
-                            <div class="post-info">
-                                <a href="">Kur nopirkt PSP bateriju?</a>
-                                <p>Pievienoja <a href="" id="user-link">somerandomgamer</a></p>
+                                <div class="post-info">
+                                    <a href="post.php?postid='.$posts[$i]['post_id'].'">'.$posts[$i]['post_title'].'</a>
+                                    <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
+                                </div>
                             </div>
-                        </div>
+
+                            ';
+                        }
+                        
+                        ?>
                     </div>
                 </div>
             </div>

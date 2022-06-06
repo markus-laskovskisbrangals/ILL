@@ -279,15 +279,16 @@ body{
 }
 
 .mini-post{
-    margin: 15px;
     margin-bottom: 5px;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
 .mini-post a{
+    display: inline-block;
     color: var(--text-color);
     text-decoration: none;
     font-size: 17px;
-    margin-bottom: 45px;
+    margin: 15px;
 }
 
 .advertisment{
