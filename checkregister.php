@@ -27,11 +27,8 @@ if(isset($_POST['user-add'])){
         return;
     }
 
-    if(!$email.includes("@")){
-        echo '<div class="alert alert-danger" role="alert">
-        E-pasts tika ievadīts nepareizi!
-        </div>';
-        return;
+    if (strpos($email, '@') == false) {
+        print 'There was NO @ in the e-mail address!';
     }
 
     if(strlen($password) < 8){

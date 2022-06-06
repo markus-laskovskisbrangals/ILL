@@ -18,7 +18,7 @@
             <input type="email" name="email" id="" placeholder="E-pasts">
             <input type="password" name="password" id="" placeholder="Parole">
             <input type="password" name="repeat-password" id="" placeholder="Parole atkārtoti">
-            <input type="submit" name="reigster" value="Reģistrēties" id="submit-button">
+            <input type="submit" name="register" value="Reģistrēties" id="submit-button">
         </form>
         <p>Esi jau reģistrējies? <a href="login.php">Ienākt</a></p>
     </div>
