@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./stylesheets/style.css">
     <title>Outpost Forum</title>
 </head>
+<?php session_start(); ?>
 <body>
     <div class="banner"></div>
     <?php require './components/navigation.php'; ?>
