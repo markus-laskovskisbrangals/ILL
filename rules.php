@@ -17,29 +17,24 @@
                     <p>Foruma noteikumi</p>
                 </div>
                 <div class="widget-body">
-<br>Visiem serveriem ir jāievēro un jāievieš Discord "Pakalpojumu sniegšanas noteikumi" (ToS). Par jebkuru personu, kas pārkāpj Discord "ToS" un/vai vadlīnijas, tiks ziņots un tā tiks izslēgta no servera. Pilnīgs vadlīniju un noteikumu sadalījums ir sniegts zemāk: <br><br>
+<br>Visiem foruma lietotājiem ir jāievēro The Outpost "Pakalpojumu sniegšanas noteikumi" (ToS). Par jebkuru personu, kas pārkāpj mūsu noteikumus attiecīgi pēc pārkāpuma smaguma tiks sodīti. Pilnīgs vadlīniju un noteikumu sadalījums ir sniegts zemāk: <br><br>
 
-Discord vadlīnijas: https://discordapp.com/guidelines<br>
-Discord pakalpojumu sniegšanas noteikumi: https://discordapp.com/terms<br><br>
 
-Mēs esam angļu serveris.  Lai mēs varētu atbalstīt savus spēlētājus, ievērot noteikumus un aizsargāt ikvienu, visai saziņai (ja vien nav norādīts citādi) jābūt angļu valodā.<br><br>
+Mēs esam RUST spēļu servera pakalpojumu sniedzēji Latvijā.  Lai mēs varētu atbalstīt savus spēlētājus, ievērot noteikumus un aizsargāt ikvienu, visai saziņai (ja vien nav norādīts citādi) jābūt latviešu valodā.<br><br>
 
 Saskaņā ar Discord noteikumiem visiem lietotājiem jābūt vismaz 13 gadus veciem.<br><br>
 
 1. Vienmēr cieniet cits citu. <br>
-2. Visas ziņas, valoda, attēli utt. ir jāuzskata par drošiem darbam. <br>
-3. VIENMĒR izlasiet piespraustos ziņojumus. <br>
-4. Nesūtiet surogātpastu.<br>
-5. Serverī netiek pieļauts apzināti likt cilvēkiem justies neērti.<br>
-6. Avatariem, lietotājvārdiem, emotīviem, statusiem un sarunām jābūt drošiem darbam.<br>
-7. Aizliegtās tēmas: Aizliegtas tēmas: Politika, reliģija, pretrunīgi, aizvainojoši un (NSFW) temati. <br>
-8. Naids runas, rasistiski/eksistējoši, rupjības vai nelikumīgas ziņas/komunikācija nozīmē tūlītēju aizliegumu.<br>
-9. Rīkojies kā pieaugušais.<br>
-10. Ziņojiet par jebkādu nevēlamu uzvedību personāla loceklim.<br>
-11. Netroļojiet un nesabojājiet pieredzi citiem. Tas attiecas arī uz balss kanāliem.<br>
-12. Nulles tolerance pret jebkādu nelikumīgu/necilvēcīgu rīcību serverī, balss čatā vai DM.<br>
-13. Par ļaunprātīgu uzvedību var saņemt brīdinājumu un/vai beztermiņa aizliegumu.<br>
-14. Viltus apsūdzības tiks pārbaudītas un attiecīgi izskatītas.<br>
+2. Nesūtiet surogātpastu.<br>
+3. Serverī netiek pieļauts apzināti likt cilvēkiem justies neērti.<br>
+4. Avatāriem, lietotājvārdiem, emotīviem, statusiem un sarunām jābūt drošiem pret jebkuru vecumu grupu.<br>
+5. Aizliegtās tēmas: Aizliegtas tēmas: Politika, reliģija, pretrunīgi, aizvainojoši un (NSFW) temati. <br>
+6. Naids runas, rasistiski, rupjības vai nelikumīgas ziņas/komunikācija nozīmē tūlītēju foruma pieejas aizliegumu.<br>
+7. Rīkojies kā pieaugušais.<br>
+8. Ziņojiet par jebkādu nevēlamu uzvedību personāla loceklim.<br>
+9. Netroļojiet un nesabojājiet pieredzi citiem.<br>
+10. Par ļaunprātīgu uzvedību var saņemt brīdinājumu un/vai beztermiņ foruma pieejas aizliegumu.<br>
+11. Viltus apsūdzības tiks pārbaudītas un attiecīgi izskatītas.<br><br>
                 </div>
                 <div class="widget-body"></div>
             </div>
