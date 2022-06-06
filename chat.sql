@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2022 at 03:28 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: Jun 06, 2022 at 07:00 PM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,29 +24,30 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `chatsystem`
+-- Table structure for table `chat`
 --
 
-CREATE TABLE `chatsystem` (
+CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
   `message` varchar(255) COLLATE utf8_latvian_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_latvian_ci;
 
 --
--- Dumping data for table `chatsystem`
+-- Dumping data for table `chat`
 --
 
-INSERT INTO `chatsystem` (`id`, `message`) VALUES
-(1, 'This place is as empty as my bank account!');
+INSERT INTO `chat` (`id`, `message`) VALUES
+(1, 'This place is as empty as my bank account!'),
+(2, 'Čau!');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `chatsystem`
+-- Indexes for table `chat`
 --
-ALTER TABLE `chatsystem`
+ALTER TABLE `chat`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -54,10 +55,10 @@ ALTER TABLE `chatsystem`
 --
 
 --
--- AUTO_INCREMENT for table `chatsystem`
+-- AUTO_INCREMENT for table `chat`
 --
-ALTER TABLE `chatsystem`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `chat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
