@@ -43,7 +43,7 @@
                             <?php if(isset($_SESSION['is-logged-in'])): ?>
                             <form method="POST" action="Page2.php">
                                 <input type="textarea" name = "chat-input" autocomplete="off"/>
-                                <button type="submit" name="send-message"/>Send</button>
+                                <button type="submit" name="send-message">Send</button>
                             </form>
                             <?php else: ?>
                                 <div class="login-alert">

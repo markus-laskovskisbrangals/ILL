@@ -37,6 +37,9 @@ $email = $users[0]['email'];
                 <div class="widget-header">
                     <p><?php echo $username; ?> profils</p>
                 </div>
+                <div class="edit-profile">
+                    <a href="editprofile.php" class="thread-button">Labot profilu</a>
+                </div>
                 <div class="widget-body">
                     <p>Vārds: <?php echo $firstname; ?></p><br>
                     <p>Uzvārds: <?php echo $lastname; ?></p><br>

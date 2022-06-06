@@ -442,6 +442,58 @@ body{
 }
 
 .profileinfo .widget-body{
-    margin-top: 100px;
+    margin-top: 75px;
     margin-bottom: 100px;
+}
+
+.edit-profile{
+    width: 100%;
+    margin-top: 5px;
+    padding: 30px;
+    text-align: right;
+}
+
+.editprofile-container{
+    width: 30%;
+    margin: 12% auto;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    min-height: 250px;
+    border-radius: 7px;
+}
+
+.editprofile-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editprofile-container h2, .form-container p{
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.editprofile-container p{
+    margin-bottom: 15px;
+}
+
+.editprofile-container a{
+    color: var(--accent-color);
+}
+
+.editprofile-container input{
+    width: 90%;
+    margin: 15px auto;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 10px;
+    transition: .2s ease-in;
+    border-radius: 7px;
+    outline: none;
+}
+
+.editprofile-container input:focus{
+    border: 3px solid var(--accent-color);
 }
