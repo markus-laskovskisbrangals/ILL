@@ -32,12 +32,18 @@ $email = $users[0]['email'];
     <div class="banner"></div>
     <?php require './components/navigation.php'; ?>
     <div class="container">
+        <div class="profileinfo">
             <div class="chat-widget" style="display: inline-block; margin: 35px;">
                 <div class="widget-header">
                     <p><?php echo $username; ?> profils</p>
                 </div>
-                <div class="widget-body"></div>
+                <div class="widget-body">
+                    <p>Vārds: <?php echo $firstname; ?></p><br>
+                    <p>Uzvārds: <?php echo $lastname; ?></p><br>
+                    <p>Lietotājvārds: <?php echo $username; ?></p>
+                </div>
             </div>
         </div>
+    </div>
 </body>
 </html>

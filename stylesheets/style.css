@@ -435,3 +435,13 @@ body{
 .login-alert p{
     color: var(--text-color);
 }
+
+.profileinfo .widget-body p{
+    text-align: right;
+    margin-right: 400px;
+}
+
+.profileinfo .widget-body{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

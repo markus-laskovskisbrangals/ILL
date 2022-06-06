@@ -17,7 +17,7 @@
                     <p>Foruma noteikumi</p>
                 </div>
                 <div class="widget-body">
-<br>Visiem foruma lietotājiem ir jāievēro The Outpost "Pakalpojumu sniegšanas noteikumi" (ToS). Par jebkuru personu, kas pārkāpj mūsu noteikumus attiecīgi pēc pārkāpuma smaguma tiks sodīti. Pilnīgs vadlīniju un noteikumu sadalījums ir sniegts zemāk: <br><br>
+<p><br>Visiem foruma lietotājiem ir jāievēro The Outpost "Pakalpojumu sniegšanas noteikumi" (ToS). Par jebkuru personu, kas pārkāpj mūsu noteikumus attiecīgi pēc pārkāpuma smaguma tiks sodīti. Pilnīgs vadlīniju un noteikumu sadalījums ir sniegts zemāk: <br><br>
 
 
 Mēs esam RUST spēļu servera pakalpojumu sniedzēji Latvijā.  Lai mēs varētu atbalstīt savus spēlētājus, ievērot noteikumus un aizsargāt ikvienu, visai saziņai (ja vien nav norādīts citādi) jābūt latviešu valodā.<br><br>
@@ -34,7 +34,7 @@ Saskaņā ar Discord noteikumiem visiem lietotājiem jābūt vismaz 13 gadus vec
 8. Ziņojiet par jebkādu nevēlamu uzvedību personāla loceklim.<br>
 9. Netroļojiet un nesabojājiet pieredzi citiem.<br>
 10. Par ļaunprātīgu uzvedību var saņemt brīdinājumu un/vai beztermiņ foruma pieejas aizliegumu.<br>
-11. Viltus apsūdzības tiks pārbaudītas un attiecīgi izskatītas.<br><br>
+11. Viltus apsūdzības tiks pārbaudītas un attiecīgi izskatītas.<br><br></p>
                 </div>
                 <div class="widget-body"></div>
             </div>
