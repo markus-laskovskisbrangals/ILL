@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./stylesheets/style.css">
-    <title>Outpost Forum</title>
+    <title>The Outpost</title>
 </head>
 <?php session_start(); ?>
 <body>
@@ -14,7 +14,22 @@
     <?php require './components/navigation.php'; ?>
     <div class="container">
         <div class="namedays">
-            <p>Vārda dienas šodien: Markus</p>
+            <?php 
+            
+            $file = './assets/data/namedays.json';
+            $data = file_get_contents($file);
+            $namedays = json_decode($data, true);
+            $names = '';
+            $month = getdate()['mon'] - 1;
+            $day = getdate()['mday'] - 1;
+
+            for($i = 0; $i < sizeof($namedays[$month][$day]); $i++){
+                $names .= $namedays[$month][$day][$i].' ';
+            }
+
+            echo '<p>Vārda dienas šodien: '.$names;
+
+            ?>
         </div>
         <div class="main-content">
             <div class="content-container">
