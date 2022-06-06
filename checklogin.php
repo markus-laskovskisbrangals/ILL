@@ -3,7 +3,7 @@ session_start();
 
 //Pārbauda, vai lietotājs jau nav ielogojies
 if(isset($_SESSION["is-logged-in"])){
-    //header("Location: index.php");
+    header("Location: index.php");
 }
 
 $pdo = require 'database.php';
@@ -11,7 +11,7 @@ $pdo = require 'database.php';
 if(isset($_POST["login"])){
     $username = $_POST["username"];
     $password = $_POST["password"];
-    $sql = 'SELECT username, password FROM user WHERE username = :username AND password = :password;';
+    $sql = 'SELECT id, username, password FROM user WHERE username = :username AND password = :password;';
 
     //Iegūst lietotājvārd un paroli no datubāzes
     $statement = $pdo->prepare($sql);
@@ -23,6 +23,7 @@ if(isset($_POST["login"])){
 
     if($users){
         //Ja lietotāja dati ir pareizi, lietotājs ir ielogojies un tiek pārvirzīts
+        $_SESSION["user-id"] = $users[0]['id'];
         $_SESSION["username"] = $users[0]['username'];
         $_SESSION["is-logged-in"] = true;
         header("Location: index.php");
