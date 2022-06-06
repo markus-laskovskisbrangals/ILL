@@ -1,8 +1,8 @@
 <?php
-if(isset($_POST['user-add'])){
-    if(empty($_POST['username'] || empty($_POST['password']) || empty($_POST['re-password']))){
+if(isset($_POST['register'])){
+    if(empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['username']) || empty($_POST['email']) || empty($_POST['password']) || empty($_POST['repeat-password'])){
         echo '<div class="alert alert-danger" role="alert">
-        Please fill out all fields!
+        Visi ievades lauki nav aizpildīti!
         </div>';
         return;
     }
@@ -11,14 +11,7 @@ if(isset($_POST['user-add'])){
     $username = $_POST['username'];
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $repassword = $_POST['re-password'];
-
-    if(empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['username']) || empty($_POST['email'])) {
-        echo '<div class="alert alert-danger" role="alert">
-        Visi ievades lauki nav aizpildīti!
-        </div>';
-        return;
-    }
+    $repassword = $_POST['repeat-password'];
 
     if(strlen($username) > 32){
         echo '<div class="alert alert-danger" role="alert">
@@ -28,12 +21,15 @@ if(isset($_POST['user-add'])){
     }
 
     if (strpos($email, '@') == false) {
-        print 'There was NO @ in the e-mail address!';
+        echo '<div class="alert alert-danger" role="alert">
+        Lūdzu, ievadiet derīgu E-pasta adresi!
+        </div>';
+        return;
     }
 
     if(strlen($password) < 8){
         echo '<div class="alert alert-danger" role="alert">
-        Jūsu parole ir pārāk īsa!
+        Jūsu parole ir pārāk īsa! Tai ir jābūt vismaz <strong>8</strong> simbolus garai!
         </div>';
         return;
     }
@@ -45,21 +41,24 @@ if(isset($_POST['user-add'])){
         return;
     }
 
+    $pdo = require 'database.php';
+
     try {
         $sql = "INSERT INTO user (firstname, lastname, username, email, password) 
-                VALUES (:firstname, :lastname, :username, :email :password)";
+                VALUES (:firstname, :lastname, :username, :email, :password)";
         $statement = $pdo->prepare($sql);
         $statement->execute(array(
+            ':firstname' => $firstname,
+            ':lastname' => $lastname,
             ':username' => $username,
+            ':email' => $email,
             ':password' => md5($password)
         ));
-        echo '<div class="alert alert-success" role="alert">
-        User has been added!
-        </div>';
+        header('Location: login.php');
     } catch(PDOException $e) {
         echo $e->getMessage();
         echo '<div class="alert alert-danger" role="alert">
-        Error occured when adding user. Please try again later!
+        Datubāzes kļūda!
         </div>';
     }
     
