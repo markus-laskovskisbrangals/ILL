@@ -123,6 +123,7 @@ body{
 
 .side-container{
     flex: 1;
+    height: 100%;
 }
 
 .chat-widget{
@@ -193,4 +194,140 @@ body{
     background-color: var(--accent-color);
     color: var(--text-color);
     padding: 10px;
+}
+
+.form-container{
+    width: 30%;
+    margin: 12% auto;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--accent-color);
+    min-height: 250px;
+    border-radius: 7px;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-container h2, .form-container p{
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-container p{
+    margin-bottom: 15px;
+}
+
+.form-container a{
+    color: var(--accent-color);
+}
+
+.form-container input{
+    width: 90%;
+    margin: 15px auto;
+    background-color: var(--primary-color);
+    border: 1px solid var(--accent-color);
+    color: var(--text-color);
+    padding: 10px;
+    transition: .2s ease-in;
+    border-radius: 7px;
+    outline: none;
+}
+
+.form-container input:focus{
+    border: 3px solid var(--accent-color);
+}
+
+#submit-button{
+    cursor: pointer;
+    width: 20%;
+    font-size: 18px;
+    border: none;
+    background-color: var(--accent-color);
+}
+
+.new-thread{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.thread-button{
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    color: var(--text-color);
+    background-color: var(--accent-color);
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.side-widget{
+    margin-top: 40px;
+    margin-right: 40px;
+    background-color: var(--widget-color);
+    border-radius: 7px;
+}
+
+.mini-post{
+    margin: 15px;
+    margin-bottom: 5px;
+}
+
+.mini-post a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom: 45px;
+}
+
+.advertisment{
+    width: 70%;
+    margin-top: 40px;
+    margin-right: 40px;
+    height: 200px;
+    text-align: center;
+}
+
+.advertisment h2{
+    color: var(--text-color);
+    margin-top: 90px;
+}
+
+.forum-post{
+    width: 100%;
+    border-bottom: 3px solid var(--secondary-color);
+    display: flex;
+    flex-direction: row;
+}
+
+.image{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.post-info{
+    margin-top: 10px;
+}
+
+.post-info a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.post-info p{
+    color: rgb(177, 177, 177);
+}
+
+#user-link{
+    font-size: 16px;
+    text-decoration: underline;
+    color: lightgreen;
 }

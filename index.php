@@ -54,9 +54,45 @@
                         </div>
                     </div>
                 </div>
+                <div class="chat-widget">
+                    <div class="widget-header">
+                        <p>Foruma ieraksti</p>
+                    </div>
+                    <div class="widget-body">
+                        <div class="forum-post">
+                            <div class="image"></div>
+                            <div class="post-info">
+                                <a href="">Labdien visiem!</a>
+                                <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
+                            </div>
+                        </div>
+                        <div class="forum-post">
+                            <div class="image"></div>
+                            <div class="post-info">
+                                <a href="">Kur nopirkt PSP bateriju?</a>
+                                <p>Pievienoja <a href="" id="user-link">somerandomgamer</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="side-container">
-
+                <div class="new-thread">
+                    <a href="newpost.php" class="thread-button">+ Pievienot jaunu ierakstu</a>
+                </div>
+                <div class="side-widget">
+                    <div class="widget-header">
+                        <p>Jaunkākie ieraksti</p>
+                    </div>
+                    <div class="widget-body">
+                        <div class="mini-post"><a href="">Labdien visiem!</a></div>
+                        <div class="mini-post"><a href="">Kur nopirkt PSP bateriju?</a></div>
+                        <div class="mini-post"><a href="">Vai ir vērts izmantot torrentu 2022 gadā?</a></div>
+                    </div>
+                </div>
+                <div class="advertisment">
+                    <h2>Vieta reklāmai</h2>
+                </div>
             </div>
         </div>
     </div>
