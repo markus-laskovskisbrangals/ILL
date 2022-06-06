@@ -20,7 +20,7 @@ try{
 $sql = "INSERT INTO chat (message) VALUES ($input)";
 
 if ($connection->query($sql) === TRUE) {
-    header("location: index.php")
+    header("location: index.php");
 } else {
     echo "Error: " . $sql . "<br>" . $connection->error;
 }
