@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2022 at 07:00 PM
+-- Generation Time: Jun 06, 2022 at 10:44 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -29,16 +29,18 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `chat` (
   `id` int(11) NOT NULL,
-  `message` varchar(255) COLLATE utf8_latvian_ci NOT NULL
+  `message` varchar(255) COLLATE utf8_latvian_ci NOT NULL,
+  `user_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_latvian_ci;
 
 --
 -- Dumping data for table `chat`
 --
 
-INSERT INTO `chat` (`id`, `message`) VALUES
-(1, 'This place is as empty as my bank account!'),
-(2, 'Čau!');
+INSERT INTO `chat` (`id`, `message`, `user_id`) VALUES
+(20, 'Wsup, gamers!', 3),
+(21, 'I works!', 3),
+(22, 'Yay', 3);
 
 --
 -- Indexes for dumped tables
@@ -58,7 +60,7 @@ ALTER TABLE `chat`
 -- AUTO_INCREMENT for table `chat`
 --
 ALTER TABLE `chat`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
