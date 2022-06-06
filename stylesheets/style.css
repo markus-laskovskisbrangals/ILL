@@ -361,3 +361,56 @@ body{
     margin-left: 15px;
     border-radius: 7px;
 }
+
+.post-text{
+    margin: 15px;
+}
+
+.post-text p{
+    color: var(--text-color);
+    font-size: 18px;
+}
+
+.author-text{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.author-text p{
+    color: rgb(177, 177, 177);
+}
+
+.author-text a{
+    color: limegreen;
+}
+
+.comments h2{
+    margin-left: 15px;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.comment-block{
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.comment-author img{
+    width: 40px;
+    border-radius: 20px;
+}
+
+.comment-author a{
+    line-height: 40px;
+    color: limegreen;
+    margin-left: 5px;
+}
+
+.comment-content{
+    margin-left: 50px;
+}
+
+.comment-content p{
+    color: var(--text-color);
+}
