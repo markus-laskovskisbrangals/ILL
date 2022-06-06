@@ -66,7 +66,7 @@
                             <div class="forum-post">
                             <div class="image"></div>
                                 <div class="post-info">
-                                    <a href="post.php?postid='.$posts[$i]['post_id'].'">'.$posts[$i]['post_title'].'</a>
+                                    <a href="post.php?postid='.$posts[sizeof($posts) - $i - 1]['post_id'].'">'.$posts[sizeof($posts) - $i - 1]['post_title'].'</a>
                                     <p>Pievienoja <a href="" id="user-link">Lucas2k</a></p>
                                 </div>
                             </div>
