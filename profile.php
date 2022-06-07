@@ -37,13 +37,21 @@ $email = $users[0]['email'];
                 <div class="widget-header">
                     <p><?php echo $username; ?> profils</p>
                 </div>
-                <div class="edit-profile">
-                    <a href="editprofile.php" class="thread-button">Labot profilu</a>
+                <div class="profilepicture">
+                    <p>profile picture</p>
                 </div>
-                <div class="widget-body">
-                    <p>Vārds: <?php echo $firstname; ?></p><br>
-                    <p>Uzvārds: <?php echo $lastname; ?></p><br>
-                    <p>Lietotājvārds: <?php echo $username; ?></p>
+                <div class="edit-profile">
+                    <a href="editprofile.php" class="thread-button">Labot informāciju</a>
+                </div>
+                <div class="edit-password">
+                    <a href="editprofile.php" class="thread-button">Mainīt paroli</a>
+                </div>
+                <div class="profileinfotext">
+                    <div class="widget-body">
+                        <br><p>Vārds: <?php echo $firstname; ?></p><br>
+                        <p>Uzvārds: <?php echo $lastname; ?></p><br>
+                        <p>Lietotājvārds: <?php echo $username; ?></p><br>
+                    </div>
                 </div>
             </div>
         </div>
