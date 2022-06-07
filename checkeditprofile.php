@@ -10,8 +10,6 @@ if(isset($_POST['editprofile'])){
     $lastname = $_POST['lastname'];
     $username = $_POST['username'];
     $email = $_POST['email'];
-    $password = $_POST['password'];
-    $repassword = $_POST['repeat-password'];
 
     if(strlen($username) > 32){
         echo '<div class="alert alert-danger" role="alert">
@@ -27,32 +25,17 @@ if(isset($_POST['editprofile'])){
         return;
     }
 
-    if(strlen($password) < 8){
-        echo '<div class="alert alert-danger" role="alert">
-        Jūsu parole ir pārāk īsa! Tai ir jābūt vismaz <strong>8</strong> simbolus garai!
-        </div>';
-        return;
-    }
-
-    if($password != $repassword){
-        echo '<div class="alert alert-danger" role="alert">
-        Paroles nesakrīt!
-        </div>';
-        return;
-    }
-
     $pdo = require 'database.php';
 
     try {
-        $sql = "UPDATE user SET firstname, lastname, username, email, password 
-                VALUES :firstname, :lastname, :username, :email, :password";
+        $sql = "UPDATE TABLE user SET firstname=:firstname, lastname=:lastname, username=:username, email=:email,
+        WHERE id=:id";
         $statement = $pdo->prepare($sql);
         $statement->execute(array(
             ':firstname' => $firstname,
             ':lastname' => $lastname,
             ':username' => $username,
             ':email' => $email,
-            ':password' => md5($password)
         ));
         header('Location: profile.php');
     } catch(PDOException $e) {

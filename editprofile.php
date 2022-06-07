@@ -17,9 +17,7 @@
             <input type="text" name="lastname" id="" placeholder="Uzvārds">
             <input type="text" name="username" id="" placeholder="Lietotājvārds">
             <input type="email" name="email" id="" placeholder="E-pasts">
-            <input type="password" name="password" id="" placeholder="Parole">
-            <input type="password" name="repeat-password" id="" placeholder="Parole atkārtoti">
-            <input type="submit" name="register" value="Labot profilu" id="submit-button">
+            <input type="submit" name="editprofile" value="Labot profilu" id="submit-button">
         </form>
     </div>
 </body>
