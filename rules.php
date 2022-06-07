@@ -26,7 +26,7 @@ Saskaņā ar mūsu noteikumiem visiem lietotājiem jābūt vismaz 13 gadus vecie
 
 1. Vienmēr cieniet cits citu. <br>
 2. Nesūtiet surogātpastu.<br>
-3. Serverī netiek pieļauts apzināti likt cilvēkiem justies neērti.<br>
+3. Foumā netiek pieļauts apzināti likt cilvēkiem justies neērti.<br>
 4. Avatāriem, lietotājvārdiem, emotīviem, statusiem un sarunām jābūt drošiem pret jebkuru vecumu grupu.<br>
 5. Aizliegtās tēmas: Aizliegtas tēmas: Politika, reliģija, pretrunīgi, aizvainojoši un (NSFW) temati. <br>
 6. Naids runas, rasistiski, rupjības vai nelikumīgas ziņas/komunikācija nozīmē tūlītēju foruma pieejas aizliegumu.<br>
