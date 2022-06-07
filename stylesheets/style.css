@@ -230,7 +230,7 @@ body{
     color: var(--accent-color);
 }
 
-.form-container input{
+.form-container input, .profileinfotext-edit input{
     width: 90%;
     margin: 15px auto;
     background-color: var(--primary-color);
@@ -436,18 +436,39 @@ body{
     color: var(--text-color);
 }
 
-.profileinfotext .widget-body{
-    margin-top: 50px;
-    margin-bottom: 100px;
-    margin-left: 300px;
-    margin-right: 150px;
-    background-color: var(--primary-color);
+.profileinfotext, .profileinfotext-edit{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    margin: 30px auto;
+    margin-bottom: 25px;
     color: var(--text-color);
-    border: 1px solid var(--accent-color);
+    background-color: var(--primary-color);
+    border: 3px solid var(--accent-color);
+    padding: 10px;
 }
 
-.profileinfotext .widget-body p{
-    padding-left: 20px;
+.profileinfotext-edit{
+    display: none;
+}
+
+.profileinfotext-edit form{
+    display: flex;
+    flex-direction: column;
+}
+
+.profileinfotext p{
+    margin-bottom: 5px;
+}
+
+.profile, .profilepicture{
+    flex: 2;
+}
+
+.profilepicture{
+    width: 95%;
+    margin: 20px auto;
+    margin-bottom: 20px;
 }
 
 .edit-profile{
