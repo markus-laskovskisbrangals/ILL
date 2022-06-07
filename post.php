@@ -74,10 +74,11 @@ $profileid = $user[0]['id'];
             <div class="widget-body">
                 <?php if(isset($_SESSION['is-logged-in'])): ?>
                 <div class="newpost">
+                    <?php include './components/addcomment.php'; ?>
                     <form action="" method="POST">
                         <label for="comment-text">Pievienot komentāru:</label>
                         <input type="text" name="comment-text" id="">
-                        <button type="submit" id="submit-button">Pievienot komentāru</button>
+                        <button type="submit" id="submit-button" name="add-comment">Pievienot komentāru</button>
                     </form>
                 </div>
                 <?php else: ?>
@@ -86,25 +87,7 @@ $profileid = $user[0]['id'];
                 </div>
                 <?php endif; ?>
                 <div class="comments">
-                    <h2>Komentāri: 1</h2>
-                    <div class="comment-block">
-                        <div class="comment-author">
-                            <img src="./assets/images/bomzis.png" alt="profile picture">
-                            <a href="">xXdussydestroyerXx</a>
-                        </div>
-                        <div class="comment-content">
-                            <p>Mans pirmais komentārs</p>
-                        </div>
-                    </div>
-                    <div class="comment-block">
-                        <div class="comment-author">
-                            <img src="./assets/images/bomzis.png" alt="profile picture">
-                            <a href="">xXdussydestroyerXx</a>
-                        </div>
-                        <div class="comment-content">
-                            <p>Mans otrais komentārs</p>
-                        </div>
-                    </div>
+                    <?php include './components/loadcomments.php';  ?>
                 </div>
             </div>
         </div>

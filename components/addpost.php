@@ -13,6 +13,7 @@ if(isset($_POST['add-post'])){
 
     if(strlen($title) > 255){
         echo 'Virsraksts ir pārāk garš!';
+        return;
     }
 
     try {
