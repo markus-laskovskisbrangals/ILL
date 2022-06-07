@@ -3,7 +3,7 @@ session_start();
 
 $pdo = require 'database.php';
 
-$id = $_SESSION['user-id'];
+$id = $_GET['profileid'];
 $sql = 'SELECT * FROM user WHERE id = :id;';
 
 $statement = $pdo->prepare($sql);

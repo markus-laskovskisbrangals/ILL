@@ -72,6 +72,7 @@ $profileid = $user[0]['id'];
                 <p>Komentāri</p>
             </div>
             <div class="widget-body">
+                <?php if(isset($_SESSION['is-logged-in'])): ?>
                 <div class="newpost">
                     <form action="" method="POST">
                         <label for="comment-text">Pievienot komentāru:</label>
@@ -79,6 +80,11 @@ $profileid = $user[0]['id'];
                         <button type="submit" id="submit-button">Pievienot komentāru</button>
                     </form>
                 </div>
+                <?php else: ?>
+                <div class="login-alert" style="margin-top: 20px;">
+                    <p><a href="login.php">Ielogojies</a> lai pievienotu jaunus komentārus!</p>
+                </div>
+                <?php endif; ?>
                 <div class="comments">
                     <h2>Komentāri: 1</h2>
                     <div class="comment-block">

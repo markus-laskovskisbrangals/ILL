@@ -102,9 +102,11 @@
                         <p>Jaunkākie ieraksti</p>
                     </div>
                     <div class="widget-body">
-                        <div class="mini-post"><a href="">Labdien visiem!</a></div>
-                        <div class="mini-post"><a href="">Kur nopirkt PSP bateriju?</a></div>
-                        <div class="mini-post"><a href="">Vai ir vērts izmantot torrentu 2022 gadā?</a></div>
+                        <?php for($i = 0; $i < sizeof($posts); $i++){
+                            if($i == 4) break;
+                            echo '<div class="mini-post"><a href="post.php?postid='.$posts[sizeof($posts) - $i - 1]['post_id'].'">'.$posts[sizeof($posts) - $i - 1]['post_title'].'</a></div>';
+                        }
+                        ?>
                     </div>
                 </div>
                 <div class="advertisment">
