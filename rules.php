@@ -22,8 +22,6 @@
 
 Mēs esam RUST spēļu servera pakalpojumu sniedzēji Latvijā.  Lai mēs varētu atbalstīt savus spēlētājus, ievērot noteikumus un aizsargāt ikvienu, visai saziņai (ja vien nav norādīts citādi) jābūt latviešu valodā.<br><br>
 
-Saskaņā ar mūsu noteikumiem visiem lietotājiem jābūt vismaz 13 gadus veciem.<br><br>
-
 1. Vienmēr cieniet cits citu. <br>
 2. Nesūtiet surogātpastu.<br>
 3. Foumā netiek pieļauts apzināti likt cilvēkiem justies neērti.<br>
