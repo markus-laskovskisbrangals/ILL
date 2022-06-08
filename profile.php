@@ -17,6 +17,7 @@ $firstname = $users[0]['firstname'];
 $lastname = $users[0]['lastname'];
 $email = $users[0]['email'];
 $color = $users[0]['user_color'];
+$password = $users[0]['password'];
 
 ?>
 
@@ -44,7 +45,7 @@ $color = $users[0]['user_color'];
                         <button class="thread-button" style="border: none; width: 20%; cursor: pointer;" id="edit-button">Labot profila informāciju</button>
                     </div>
                     <div class="edit-password">
-                        <a href="editprofile.php" class="thread-button">Mainīt paroli</a>
+                    <button class="thread-button" style="border: none; width: 20%; cursor: pointer;" id="editp-button">Mainīt paroli</button>
                     </div>
                     <?php endif; ?>
                     <div class="profileinfotext">
@@ -70,6 +71,16 @@ $color = $users[0]['user_color'];
                                 <label for="firstname">Profila krāsa:</label>
                                 <input type="color" id="" value="<?php echo $color; ?>" name="color">
                                 <button type="submit" name="save-new-info" class="thread-button" id="submit-button">Saglabāt</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="password-edit">
+                        <div class="profile">
+                            <?php include './components/updatepassword.php'; ?>
+                            <form action="" method="POST">
+                                <label for="password">Jaunā parole:</label>
+                                <input type="text"  value="<?php echo $password; ?>" name="password">
+                                <button type="submit" name="update-password" class="thread-button" id="submit-button">Saglabāt</button>
                             </form>
                         </div>
                     </div>
