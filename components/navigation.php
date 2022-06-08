@@ -1,7 +1,7 @@
 <div class="menu-bar">
         <ul class="menu-itams">
             <li><a href="index.php">Sākums</a></li>
-            <li><a href="#">Forums</a></li>
+            <li><a href="forum.php">Forums</a></li>
             <li><a href="rules.php">Noteikumi</a></li>
             <!--<li><input type="text" placeholder="Meklēt..."><button><i class="fa-solid fa-magnifying-glass"></i></button></li>-->
         </ul>
