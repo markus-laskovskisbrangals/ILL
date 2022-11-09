@@ -6,11 +6,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesheets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reģistrēties</title>
+    <title>Sign Up</title>
 </head>
 <body>
     <div class="form-container">
-        <h2>Reģistrēties</h2>
+        <h2>Sign Up</h2>
         <?php include 'checkregister.php'; ?>
         <form action="" method="POST">
             <input type="text" name="firstname" id="" placeholder="Vārds">
@@ -21,7 +21,7 @@
             <input type="password" name="repeat-password" id="" placeholder="Parole atkārtoti">
             <input type="submit" name="register" value="Reģistrēties" id="submit-button">
         </form>
-        <p>Esi jau reģistrējies? <a href="login.php">Ienākt</a></p>
+        <p>Already a user? <a href="login.php">Log in!</a></p>
     </div>
 </body>
 </html>

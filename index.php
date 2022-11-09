@@ -35,7 +35,7 @@
             <div class="content-container">
                 <div class="chat-widget">
                     <div class="widget-header">
-                        <p>Čats</p>
+                        <p>Chat</p>
                     </div>
                     <div class="widget-body">
                         <iframe src="Page1.php" width="100%" height="350" scrolling="yes" frameBorder="0"></iframe>
@@ -47,7 +47,7 @@
                             </form>
                             <?php else: ?>
                                 <div class="login-alert">
-                                    <p><a href="login.php">Ielogojies</a> lai sūtītu ziņas čatā!</p>
+                                    <p><a href="login.php">Log in</a> to use chat!</p>
                                 </div>
                             <?php endif; ?>
                         </div>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="chat-widget">
                     <div class="widget-header">
-                        <p>Foruma ieraksti</p>
+                        <p>Forum Posts</p>
                     </div>
                     <div class="widget-body">
                         <?php
@@ -94,12 +94,12 @@
             <div class="side-container">
                 <?php if (isset($_SESSION['is-logged-in'])): ?>
                 <div class="new-thread">
-                    <a href="newpost.php" class="thread-button">+ Pievienot jaunu ierakstu</a>
+                    <a href="newpost.php" class="thread-button">+ Add new Post</a>
                 </div>
                 <?php endif; ?>
                 <div class="side-widget">
                     <div class="widget-header">
-                        <p>Jaunkākie ieraksti</p>
+                        <p>New</p>
                     </div>
                     <div class="widget-body">
                         <?php for($i = 0; $i < sizeof($posts); $i++){
@@ -110,7 +110,7 @@
                     </div>
                 </div>
                 <div class="advertisment">
-                    <h2>Vieta reklāmai</h2>
+                    <h2>Placeholder for advertisements</h2>
                 </div>
             </div>
         </div>

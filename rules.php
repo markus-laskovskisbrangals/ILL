@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./stylesheets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foruma noteikumi</title>
+    <title>Rules</title>
 </head>
 <?php session_start(); ?>
 <body>
@@ -14,7 +14,7 @@
         <div class="container">
             <div class="chat-widget" style="display: inline-block; margin: 35px;">
                 <div class="widget-header">
-                    <p>Foruma noteikumi</p>
+                    <p>Rules</p>
                 </div>
                 <div class="widget-body">
 <p><br>Visiem foruma lietotājiem ir jāievēro The Outpost "Pakalpojumu sniegšanas noteikumi" (ToS). Par jebkuru personu, kas pārkāpj mūsu noteikumus attiecīgi pēc pārkāpuma smaguma tiks sodīti. Pilnīgs vadlīniju un noteikumu sadalījums ir sniegts zemāk: <br><br>
