@@ -19,7 +19,7 @@
             <div class="content-container">
                 <div class="chat-widget">
                     <div class="widget-header">
-                        <p>Foruma ieraksti</p>
+                        <p>Forum Posts</p>
                     </div>
                     <div class="widget-body">
                         <?php
@@ -58,12 +58,12 @@
             <div class="side-container">
                 <?php if (isset($_SESSION['is-logged-in'])): ?>
                 <div class="new-thread">
-                    <a href="newpost.php" class="thread-button">+ Pievienot jaunu ierakstu</a>
+                    <a href="newpost.php" class="thread-button">+ Add new Post</a>
                 </div>
                 <?php endif; ?>
                 <div class="side-widget">
                     <div class="widget-header">
-                        <p>Jaunkākie ieraksti</p>
+                        <p>New</p>
                     </div>
                     <div class="widget-body">
                         <?php for($i = 0; $i < sizeof($posts); $i++){
@@ -74,7 +74,7 @@
                     </div>
                 </div>
                 <div class="advertisment">
-                    <h2>Vieta reklāmai</h2>
+                    <h2>Placeholder for advertisements</h2>
                 </div>
             </div>
         </div>
